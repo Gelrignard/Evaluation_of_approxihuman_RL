@@ -39,6 +39,8 @@ RUN pip3 install --upgrade "pip<24.1"
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt /tmp/requirements.txt
+# Force reinstall PyYAML to override the system-installed distutils version
+RUN pip3 install --ignore-installed PyYAML==6.0
 RUN pip3 install -r /tmp/requirements.txt
 
 # Set working directory
