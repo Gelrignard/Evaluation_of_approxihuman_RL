@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tc-driver:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ..:/workspace
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+    stdin_open: true
+    tty: true
+    # For GUI support (optional)
+    # network_mode: host
