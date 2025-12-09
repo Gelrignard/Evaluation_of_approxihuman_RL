@@ -40,7 +40,7 @@ def train(env_conf, continue_training=False):
             int(time.time()),
         ),
         project=project,
-        entity="forzapbl",
+        entity="guenlin-university-of-pennsylvania",
         config=env_conf,
         sync_tensorboard=True,  # auto-upload sb3's tensorboard metrics
         monitor_gym=True,  # auto-upload the videos of agents playing the game

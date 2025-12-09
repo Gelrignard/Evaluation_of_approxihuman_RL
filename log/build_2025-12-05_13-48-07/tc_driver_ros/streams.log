@@ -1,0 +1,52 @@
+[0.227s] Invoking command in '/home/gel/catkin/src/TC-Driver/build/tc_driver_ros': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/gel/catkin/src/TC-Driver/TC_Driver/tc_driver_ros -DCMAKE_BUILD_TYPE=Debug -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/gel/catkin/src/TC-Driver/install/tc_driver_ros
+[0.304s] -- The C compiler identification is GNU 9.4.0
+[0.372s] -- The CXX compiler identification is GNU 9.4.0
+[0.379s] -- Check for working C compiler: /usr/bin/cc
+[0.445s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.446s] -- Detecting C compiler ABI info
+[0.511s] -- Detecting C compiler ABI info - done
+[0.523s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.526s] -- Check for working CXX compiler: /usr/bin/c++
+[0.610s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.611s] -- Detecting CXX compiler ABI info
+[0.696s] -- Detecting CXX compiler ABI info - done
+[0.711s] -- Detecting CXX compile features
+[0.712s] -- Detecting CXX compile features - done
+[0.714s] -- Using CATKIN_DEVEL_PREFIX: /home/gel/catkin/src/TC-Driver/build/tc_driver_ros/devel
+[0.714s] -- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+[0.714s] -- This workspace overlays: /opt/ros/noetic
+[0.717s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.737s] -- Found PythonInterp: /home/gel/anaconda3/bin/python3 (found suitable version "3.12.7", minimum required is "3") 
+[0.737s] -- Using PYTHON_EXECUTABLE: /home/gel/anaconda3/bin/python3
+[0.737s] -- Using Debian Python package layout
+[0.764s] -- Found PY_em: /home/gel/anaconda3/lib/python3.12/site-packages/em.py  
+[0.764s] -- Using empy: /home/gel/anaconda3/lib/python3.12/site-packages/em.py
+[0.897s] -- Using CATKIN_ENABLE_TESTING: ON
+[0.897s] -- Call enable_testing()
+[0.900s] -- Using CATKIN_TEST_RESULTS_DIR: /home/gel/catkin/src/TC-Driver/build/tc_driver_ros/test_results
+[1.209s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[1.209s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[1.209s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[1.229s] -- Found PythonInterp: /home/gel/anaconda3/bin/python3 (found version "3.12.7") 
+[1.230s] -- Found Threads: TRUE  
+[1.234s] -- Using Python nosetests: /usr/bin/nosetests3
+[1.265s] ImportError: "from catkin_pkg.package import parse_package" failed: No module named 'catkin_pkg'
+[1.266s] Make sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.
+[1.268s] CMake Error at /opt/ros/noetic/share/catkin/cmake/safe_execute_process.cmake:11 (message):
+[1.268s]   execute_process(/home/gel/anaconda3/bin/python3
+[1.268s]   "/opt/ros/noetic/share/catkin/cmake/parse_package_xml.py"
+[1.268s]   "/opt/ros/noetic/share/catkin/cmake/../package.xml"
+[1.268s]   "/home/gel/catkin/src/TC-Driver/build/tc_driver_ros/catkin/catkin_generated/version/package.cmake")
+[1.268s]   returned error code 1
+[1.269s] Call Stack (most recent call first):
+[1.269s]   /opt/ros/noetic/share/catkin/cmake/catkin_package_xml.cmake:74 (safe_execute_process)
+[1.269s]   /opt/ros/noetic/share/catkin/cmake/all.cmake:168 (_catkin_package_xml)
+[1.269s]   /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+[1.269s]   CMakeLists.txt:10 (find_package)
+[1.269s] 
+[1.269s] 
+[1.271s] -- Configuring incomplete, errors occurred!
+[1.271s] See also "/home/gel/catkin/src/TC-Driver/build/tc_driver_ros/CMakeFiles/CMakeOutput.log".
+[1.271s] See also "/home/gel/catkin/src/TC-Driver/build/tc_driver_ros/CMakeFiles/CMakeError.log".
+[1.276s] Invoked command in '/home/gel/catkin/src/TC-Driver/build/tc_driver_ros' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/gel/catkin/src/TC-Driver/TC_Driver/tc_driver_ros -DCMAKE_BUILD_TYPE=Debug -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/gel/catkin/src/TC-Driver/install/tc_driver_ros

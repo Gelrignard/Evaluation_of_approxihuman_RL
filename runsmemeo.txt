@@ -2,3 +2,14 @@ conda activate tc-driver
 
 source ~/catkin/devel/setup.bash
 
+
+python TC_Driver/train/train.py 
+
+
+roslaunch f1tenth_simulator pbl_sim_tc_driver.launch map_name:=berlin
+
+python3 convert_tracks.py \
+    f1tenth_racetracks/Austin/Austin_raceline.csv \
+    F110_ROS_Simulator/maps/Austin/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Austin/Austin_map.png --x 500 --y 400

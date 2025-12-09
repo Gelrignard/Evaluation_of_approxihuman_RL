@@ -1,0 +1,15 @@
+running develop
+running egg_info
+creating f110_gym.egg-info
+writing f110_gym.egg-info/PKG-INFO
+writing dependency_links to f110_gym.egg-info/dependency_links.txt
+writing requirements to f110_gym.egg-info/requires.txt
+writing top-level names to f110_gym.egg-info/top_level.txt
+writing manifest file 'f110_gym.egg-info/SOURCES.txt'
+reading manifest file 'f110_gym.egg-info/SOURCES.txt'
+writing manifest file 'f110_gym.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages/site.py
+Creating /home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages/f110-gym.egg-link (link to .)
+
+Installed /home/gel/catkin/src/TC-Driver/build/f110_gym

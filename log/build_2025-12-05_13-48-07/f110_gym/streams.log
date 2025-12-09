@@ -1,0 +1,17 @@
+[0.644s] Invoking command in '/home/gel/catkin/src/TC-Driver/build/f110_gym': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/gel/catkin/src/TC-Driver/build/f110_gym/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/gel/catkin/src/TC-Driver/build/f110_gym/build --no-deps
+[0.844s] running develop
+[0.971s] running egg_info
+[0.972s] creating f110_gym.egg-info
+[0.972s] writing f110_gym.egg-info/PKG-INFO
+[0.972s] writing dependency_links to f110_gym.egg-info/dependency_links.txt
+[0.972s] writing requirements to f110_gym.egg-info/requires.txt
+[0.972s] writing top-level names to f110_gym.egg-info/top_level.txt
+[0.972s] writing manifest file 'f110_gym.egg-info/SOURCES.txt'
+[0.973s] reading manifest file 'f110_gym.egg-info/SOURCES.txt'
+[0.974s] writing manifest file 'f110_gym.egg-info/SOURCES.txt'
+[1.005s] running build_ext
+[1.032s] Creating /home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages/site.py
+[1.034s] Creating /home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages/f110-gym.egg-link (link to .)
+[1.035s] 
+[1.035s] Installed /home/gel/catkin/src/TC-Driver/build/f110_gym
+[1.069s] Invoked command in '/home/gel/catkin/src/TC-Driver/build/f110_gym' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/gel/catkin/src/TC-Driver/build/f110_gym/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gel/catkin/src/TC-Driver/install/f110_gym/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/gel/catkin/src/TC-Driver/build/f110_gym/build --no-deps

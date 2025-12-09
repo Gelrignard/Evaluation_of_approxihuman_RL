@@ -1,6 +1,6 @@
 mu: !!float 1.0489
-C_sf: !!float 4.718
-C_sr: !!float 5.4562
+C_Sf: !!float 4.718
+C_Sr: !!float 5.4562
 lf: !!float 0.15875
 lr: !!float 0.17145
 h: !!float 0.074

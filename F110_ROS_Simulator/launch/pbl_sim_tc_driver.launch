@@ -23,7 +23,8 @@
   </node>
 
   <!-- rosbag with global waypoints -->
-  <node pkg="rosbag" type="play" name="glb_player" output="screen" args="-r 5 -q $(arg base_map_dir)/maps/$(arg map_name)/global_wpnts.bag">
+  <node pkg="rosbag" type="play" name="glb_player" output="screen" 
+        args="-l -r 5 -q -d 2 $(arg base_map_dir)/maps/$(arg map_name)/global_wpnts.bag">
   </node>
 
   <!-- run tc driver -->
