@@ -5,6 +5,6 @@ negate: 0
 occupied_thresh: 0.45
 free_thresh: 0.196
 map_ext: '.png'
-sx: 0.5549085
-sy: -0.6243834
+sx: 0
+sy: 0
 stheta: 4.1367500

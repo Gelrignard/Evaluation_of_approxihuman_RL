@@ -8,8 +8,181 @@ python TC_Driver/train/train.py
 
 roslaunch f1tenth_simulator pbl_sim_tc_driver.launch map_name:=berlin
 
+
+1. Process map global_wpnts
+2. Process map image
+3. Rename files
+
+
+A
 python3 convert_tracks.py \
     f1tenth_racetracks/Austin/Austin_raceline.csv \
     F110_ROS_Simulator/maps/Austin/global_wpnts.bag
 
 python3 process_map_image.py F110_ROS_Simulator/maps/Austin/Austin_map.png --x 500 --y 400
+
+B
+python3 convert_tracks.py \
+    f1tenth_racetracks/BrandsHatch/BrandsHatch_raceline.csv \
+    F110_ROS_Simulator/maps/BrandsHatch/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/BrandsHatch/BrandsHatch_map.png --x 500 --y 350
+
+
+B
+python3 convert_tracks.py \
+    f1tenth_racetracks/Budapest/Budapest_raceline.csv \
+    F110_ROS_Simulator/maps/Budapest/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Budapest/Budapest_map.png --x 500 --y 350
+
+
+C
+python3 convert_tracks.py \
+    f1tenth_racetracks/Catalunya/Catalunya_raceline.csv \
+    F110_ROS_Simulator/maps/Catalunya/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Catalunya/Catalunya_map.png --x 500 --y 350
+
+H
+python3 convert_tracks.py \
+    f1tenth_racetracks/Hockenheim/Hockenheim_raceline.csv \
+    F110_ROS_Simulator/maps/Hockenheim/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Hockenheim/Hockenheim_map.png --x 500 --y 350
+
+I
+python3 convert_tracks.py \
+    f1tenth_racetracks/IMS/IMS_raceline.csv \
+    F110_ROS_Simulator/maps/IMS/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/IMS/IMS_map.png --x 500 --y 350
+
+Melbourne
+python3 convert_tracks.py \
+    f1tenth_racetracks/Melbourne/Melbourne_raceline.csv \
+    F110_ROS_Simulator/maps/Melbourne/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Melbourne/Melbourne_map.png --x 500 --y 350
+
+MexicoCity
+python3 convert_tracks.py \
+    f1tenth_racetracks/MexicoCity/MexicoCity_raceline.csv \
+    F110_ROS_Simulator/maps/MexicoCity/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/MexicoCity/MexicoCity_map.png --x 500 --y 350
+
+Monza
+python3 convert_tracks.py \
+    f1tenth_racetracks/Monza/Monza_raceline.csv \
+    F110_ROS_Simulator/maps/Monza/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Monza/Monza_map.png --x 500 --y 350
+
+
+MoscowRaceway
+python3 convert_tracks.py \
+    f1tenth_racetracks/MoscowRaceway/MoscowRaceway_raceline.csv \
+    F110_ROS_Simulator/maps/MoscowRaceway/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/MoscowRaceway/MoscowRaceway_map.png --x 500 --y 350
+
+
+Nuerburgring
+python3 convert_tracks.py \
+    f1tenth_racetracks/Nuerburgring/Nuerburgring_raceline.csv \
+    F110_ROS_Simulator/maps/Nuerburgring/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Nuerburgring/Nuerburgring_map.png --x 500 --y 350
+
+
+Oschersleben
+python3 convert_tracks.py \
+    TC_Driver/cfg/Oschersleben_raceline.csv \
+    F110_ROS_Simulator/maps/Oschersleben/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Oschersleben/Oschersleben_map.png --x 500 --y 350
+
+
+Sakhir
+python3 convert_tracks.py \
+    f1tenth_racetracks/Sakhir/Sakhir_raceline.csv \
+    F110_ROS_Simulator/maps/Sakhir/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Sakhir/Sakhir_map.png --x 500 --y 350
+
+
+SaoPaulo
+python3 convert_tracks.py \
+    f1tenth_racetracks/SaoPaulo/SaoPaulo_raceline.csv \
+    F110_ROS_Simulator/maps/SaoPaulo/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/SaoPaulo/SaoPaulo_map.png --x 500 --y 350
+
+
+Sepang
+python3 convert_tracks.py \
+    f1tenth_racetracks/Sepang/Sepang_raceline.csv \
+    F110_ROS_Simulator/maps/Sepang/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Sepang/Sepang_map.png --x 500 --y 350
+
+
+Shanghai
+python3 convert_tracks.py \
+    f1tenth_racetracks/Shanghai/Shanghai_raceline.csv \
+    F110_ROS_Simulator/maps/Shanghai/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Shanghai/Sepang_map.png --x 500 --y 350
+
+
+SILVERSTONE
+python3 convert_tracks.py \
+    TC_Driver/cfg/SILVERSTONE_raceline.csv \
+    F110_ROS_Simulator/maps/SILVERSTONE/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/SILVERSTONE/SILVERSTONE.png --x 500 --y 350
+
+
+SOCHI
+python3 convert_tracks.py \
+    TC_Driver/cfg/SOCHI_raceline.csv \
+    F110_ROS_Simulator/maps/SOCHI/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/SOCHI/SOCHI.png --x 500 --y 350
+
+
+Spa
+python3 convert_tracks.py \
+    f1tenth_racetracks/Spa/Spa_raceline.csv \
+    F110_ROS_Simulator/maps/Spa/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Spa/Spa_map.png --x 500 --y 350
+
+
+
+Spielberg
+python3 convert_tracks.py \
+    f1tenth_racetracks/Spielberg/Spielberg_raceline.csv \
+    F110_ROS_Simulator/maps/Spielberg/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Spielberg/Spielberg_map.png --x 500 --y 350
+
+
+YasMarina
+python3 convert_tracks.py \
+    f1tenth_racetracks/YasMarina/YasMarina_raceline.csv \
+    F110_ROS_Simulator/maps/YasMarina/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/YasMarina/YasMarina_map.png --x 500 --y 350
+
+
+Zandvoort
+python3 convert_tracks.py \
+    f1tenth_racetracks/Zandvoort/Zandvoort_raceline.csv \
+    F110_ROS_Simulator/maps/Zandvoort/global_wpnts.bag
+
+python3 process_map_image.py F110_ROS_Simulator/maps/Zandvoort/Zandvoort_map.png --x 500 --y 350
+
+
+roslaunch f1tenth_simulator pbl_sim_tc_driver.launch map_name:=
