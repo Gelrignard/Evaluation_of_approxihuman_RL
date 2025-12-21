@@ -30,25 +30,28 @@ https://github.com/user-attachments/assets/edc9d5fb-a75b-4e77-a498-da88256b01a0
 
 ### 2.1 Train PPO in F1TENTH
 
-The trained policy is an end-to-end PPO in F1TENTH using stable-baseline 3 for a day:
+The trained policy is an end-to-end PPO in F1TENTH using stable-baseline 3 for a day (approx. 10M steps). The agent converged to a smooth, collision-free policy on the source track (though a bit slow).
 
 https://github.com/user-attachments/assets/cb88c2c9-e6d3-4675-95f4-64f63d28e35e
 
 ### 2.2 Direct Migration
 
-
+Pre-Alignment: Without precise action scaling, the agent exhibited drastic, high-frequency steering oscillations immediately upon initialization.
 
 https://github.com/user-attachments/assets/ea1fbe72-4025-4c83-a375-a1bc11965fd2
 
-
+To enable transfer, the physical parameters, observation (LIDAR, Pos, state, etc.) and action spaces (throttle, steering) of the target simulator were manually aligned to match the source training environment.
 
 ### 2.3 Migration After Alignment
 
-
+Post-Alignment: Even after aligning the observation vectors and action scalars, the policy failed to generalize.
 
 
 https://github.com/user-attachments/assets/00bb4832-31a0-4385-825b-e710dacc4f69
 
+The potential reasons are:
+* The internal physics engines differ significantly (e.g., friction coefficients, tire slip models).
+* The PPO policy overfitted to the specific dynamics of the F1TENTH Gym.
 
 ## 3. Experiment 3: Direct End-to-End training
 
@@ -70,5 +73,6 @@ TCDriver Reproduction: Achieved a 30% success rate (7/23 tracks). Though this me
 Sim-to-Sim Transfer: The policy transfer from high speed gym to high-fidelity rendered simulators proved infeasible due to simulation gaps.
 
 End-to-End Visual Training: Direct training in rendered simulators is currently bottlenecked by simulation speed (real-time training), preventing convergence within feasible timeframes.
+
 
 
