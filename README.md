@@ -14,6 +14,10 @@ Reproduce the paper TC-Drievr on the full suite of F1TENTH benchmark tracks. Thi
 
 The success rate of the TC-Driver paper on all F1TENTH tracks are: success on 7 out of 23 tracks. Though the paper highlights generalizability, the result shows that it does not generalize that well. The policy struggles to adapt to track geometries not present in their training and demostartion set.
 
+The recordings of successful tracks are below.
+
+https://github.com/user-attachments/assets/f9509a3e-0195-4181-958b-dcc5d8346d25
+
 ### 1.2 Key Failure Analysis:
 
 The primary failure mode is oscillation with low speed. In a condition that the car is at an angle relative to the track centerline, the agent fails to steer effectively and oscillates at low speeds. This shows that the policy lacks the ability to using steering to recover in this condition.
@@ -66,4 +70,5 @@ TCDriver Reproduction: Achieved a 30% success rate (7/23 tracks). Though this me
 Sim-to-Sim Transfer: The policy transfer from high speed gym to high-fidelity rendered simulators proved infeasible due to simulation gaps.
 
 End-to-End Visual Training: Direct training in rendered simulators is currently bottlenecked by simulation speed (real-time training), preventing convergence within feasible timeframes.
+
 
