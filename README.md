@@ -28,9 +28,45 @@ https://github.com/user-attachments/assets/edc9d5fb-a75b-4e77-a498-da88256b01a0
 
 ## 2. Experiment 2: Sim-to-Sim Transfer 
 
+### 2.1 Train PPO in F1TENTH
+
+The trained policy is an end-to-end PPO in F1TENTH using stable-baseline 3 for a day:
+
+https://github.com/user-attachments/assets/cb88c2c9-e6d3-4675-95f4-64f63d28e35e
+
+### 2.2 Direct Migration
+
+
+
+https://github.com/user-attachments/assets/ea1fbe72-4025-4c83-a375-a1bc11965fd2
+
+
+
+### 2.3 Migration After Alignment
+
+
+
+
+https://github.com/user-attachments/assets/00bb4832-31a0-4385-825b-e710dacc4f69
+
 
 ## 3. Experiment 3: Direct End-to-End training
 
+
+
+
+### 3.1 Methodology Details
+
+### 3.2 Most-Recent Result
+
+
+https://github.com/user-attachments/assets/aeb527b2-4fdc-46f7-a43e-9b6c83bb5600
+
 ## 4. Conclusion and Future Prospects
+The key result
 
+TCDriver Reproduction: Achieved a 30% success rate (7/23 tracks). Though this method depicts better generalizability than other methods, it still identified overfitting issues in the original baseline, not genralizing well on all conditions.
 
+Sim-to-Sim Transfer: The policy transfer from high speed gym to high-fidelity rendered simulators proved infeasible due to simulation gaps.
+
+End-to-End Visual Training: Direct training in rendered simulators is currently bottlenecked by simulation speed (real-time training), preventing convergence within feasible timeframes.
