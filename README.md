@@ -44,6 +44,9 @@ The trained policy is an end-to-end PPO in F1TENTH using stable-baseline 3 for t
 
 https://github.com/user-attachments/assets/cb88c2c9-e6d3-4675-95f4-64f63d28e35e
 
+Youtube Link: 
+[https://youtu.be/7TR5dYTiEbI](https://youtu.be/7TR5dYTiEbI)
+
 ### 2.2 Direct Migration
 
 Pre-Alignment: Without precise action scaling, the agent exhibited drastic, high-frequency steering oscillations immediately upon initialization.
@@ -52,12 +55,17 @@ https://github.com/user-attachments/assets/ea1fbe72-4025-4c83-a375-a1bc11965fd2
 
 To enable transfer, the physical parameters, observation (LIDAR, Pos, state, etc.) and action spaces (throttle, steering) of the target simulator were manually aligned to match the source training environment.
 
+Youtube Link: 
+[https://youtu.be/-Bidc7pVoOM](https://youtu.be/-Bidc7pVoOM)
+
 ### 2.3 Migration After Alignment
 
 Post-Alignment: Even after aligning the observation vectors and action scalars, the policy failed to generalize.
 
-
 https://github.com/user-attachments/assets/00bb4832-31a0-4385-825b-e710dacc4f69
+
+Youtube Link: 
+[https://youtu.be/j6FQdK1cLrM](https://youtu.be/j6FQdK1cLrM)
 
 The potential reasons are:
 * The internal physics engines differ significantly (e.g., friction coefficients, tire slip models).
@@ -79,6 +87,9 @@ This training did not converge to a smooth driving policy.
 
 https://github.com/user-attachments/assets/aeb527b2-4fdc-46f7-a43e-9b6c83bb5600
 
+Youtube Link: 
+[https://youtu.be/KQ0D8JEPjgc](https://youtu.be/KQ0D8JEPjgc)
+
 The agent developed a "Pulsing" control strategy. It outputs throttle in short bursts (approx. 2 Hz frequency) and random steering when no throttle. While this strategy avoids high-speed crashes, it fails to complete a lap efficiently. The agent need more timesteps to learn for better racing strategy.
 
 ## 4. Conclusion and Future Prospects
@@ -93,6 +104,7 @@ The agent developed a "Pulsing" control strategy. It outputs throttle in short b
 Based on the limitations identified above, my future research should move away from pure end-to-end RL and focus on *structured learning paradigms* (like TC-Driver) for faster training.
 
 Besides, from car motion during trainning, we can notice a significant difference from PPO learning (initializing from initial state randomly) and human learning (from sense to actual input). My future work should focus on human study and building learning algotithm structure that better mimic human learning patterns in car racing.
+
 
 
 
