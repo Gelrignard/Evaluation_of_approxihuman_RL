@@ -18,6 +18,9 @@ The recordings of successful tracks are below.
 
 https://github.com/user-attachments/assets/f9509a3e-0195-4181-958b-dcc5d8346d25
 
+Youtube Link: 
+[https://youtu.be/QI4dagA5XG4](https://youtu.be/QI4dagA5XG4)
+
 ### 1.2 Key Failure Analysis:
 
 The primary failure mode is oscillation with low speed.
@@ -31,7 +34,7 @@ The video below illustrates the agent failing to correct its heading, resulting 
 https://github.com/user-attachments/assets/edc9d5fb-a75b-4e77-a498-da88256b01a0
 
 Youtube Link: 
-[https://youtu.be/QI4dagA5XG4](https://youtu.be/QI4dagA5XG4)
+[https://youtu.be/1RZKaoyIHcE](https://youtu.be/1RZKaoyIHcE)
 
 ## 2. Experiment 2: Sim-to-Sim Transfer 
 
@@ -90,5 +93,6 @@ The agent developed a "Pulsing" control strategy. It outputs throttle in short b
 Based on the limitations identified above, my future research should move away from pure end-to-end RL and focus on *structured learning paradigms* (like TC-Driver) for faster training.
 
 Besides, from car motion during trainning, we can notice a significant difference from PPO learning (initializing from initial state randomly) and human learning (from sense to actual input). My future work should focus on human study and building learning algotithm structure that better mimic human learning patterns in car racing.
+
 
 
